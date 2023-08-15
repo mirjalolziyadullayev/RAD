@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -34,17 +35,17 @@ body::-webkit-scrollbar-thumb {
 } 
 /* Content */
 .content {
-    margin-top: 5%;
+    margin: auto;
+    width: 70%;
     text-align: center; 
     background-color: #e3f0f3d3;
-    display: block;
     border: 1px solid #86868b;
     border-radius: 12px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 15px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+
 }
 /* .content img {
     padding: 15px;
@@ -106,6 +107,7 @@ body::-webkit-scrollbar-thumb {
     padding: 15px;
 }
 .item {
+    height: 110px;
     padding: 15px;
     margin: 15px;
     border: 1px solid #86868b;
@@ -124,6 +126,7 @@ body::-webkit-scrollbar-thumb {
     padding: 15px;
 }
 .item button {
+    float: right;
     background-color: #0cd33e;
     border: 1px solid #86868b;
     border-radius: 5px;
