@@ -1,3 +1,20 @@
+@media all and (max-width: 700px) {
+    .navbar {
+        font-size: 12px;
+        border-right: none;
+        border-left: none;
+    }
+    .content {
+        border: none!important;
+        border-radius: 0px!important;
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin-bottom: 0px!important;
+        margin-top: 0px!important;
+        font-size: 12px;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -26,6 +43,7 @@ body::-webkit-scrollbar-thumb {
 .navbar {
     background-color: #e3f0f3d3;
     border-bottom: 1px solid #86868b;
+    border-left: 1px solid #86868b;
     border-right: 1px solid #86868b;
     padding: 10px;
     text-align: center;
@@ -33,17 +51,20 @@ body::-webkit-scrollbar-thumb {
     font-size: 14px;
 } 
 /* Content */
+
+
 .content {
-    margin-right: 20px;
-    margin-left: 20px;
+
     text-align: center; 
     background-color: #e3f0f3d3;
     border: 1px solid #86868b;
     border-radius: 12px;
     padding: 10px;
+    padding-bottom: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-bottom: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
 
 }
 /* .content img {
