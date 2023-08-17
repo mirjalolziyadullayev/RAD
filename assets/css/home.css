@@ -158,6 +158,6 @@ body::-webkit-scrollbar-thumb {
     padding-left: 5px;
     padding-right: 5px;
 }
-.item button:hover {
+.item button:active {
     background-color: #0be041;
 }
