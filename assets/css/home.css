@@ -27,17 +27,26 @@
         margin-top: 0px!important;
         font-size: 12px!important;
     }
-
+    .item {
+        margin-left: 5px!important;
+        margin-right: 5px!important;
+    }
     .item button {
         margin-top: 44px!important;
     }
 }
+
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
 }
 body {
-    background: url(./assets/images/welcome/image.jpg) no-repeat center center fixed; 
+    background: url(/assets/images/welcome/image.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -84,10 +93,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar .logout {
-    background-color: #d30c2a;
+    background-color: #e01e3b;
 }
 .navbar .logout:active {
-    background-color: #e31131;
+    background-color: #ed2745;
 }  
 
 /* Content */
