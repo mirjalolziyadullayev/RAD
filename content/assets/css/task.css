@@ -32,7 +32,8 @@
         margin-right: 5px!important;
     }
     .item button {
-        margin-top: 44px!important;
+        margin-top: -2px!important;
+        margin-bottom: -2px!important;
     }
 }
 
@@ -167,13 +168,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.task li {
+.item li {
     text-align: left;
     border: 1px solid #86868b;
     background-color: #e3f0f3c5;
+    user-select: none;
+    list-style: none;
     border-radius: 12px;
-    margin: 20px;
-    padding: 20px;
+    margin: 15px;
+    padding: 15px;
+
 }
+.item li button {
+    padding-top: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    float: right;
+    background-color: #0cd33e;
+    border: 1px solid #86868b;
+    border-radius: 5px;
+}
+.item li button:active {
+    background-color: #0be041;
+}
+
+
     
 
