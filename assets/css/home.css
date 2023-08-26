@@ -19,6 +19,8 @@
         background-color: #0be041;
     }
     .content {
+        min-height: 100vh;
+        height: 100%!important;
         border: none!important;
         border-radius: 0px!important;
         margin-left: 0px!important;
@@ -105,6 +107,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #86868b;
     border-radius: 12px;
     padding: 10px;
+    min-height: 100vh;
     padding-bottom: 30px;
     margin-top: 50px;
     margin-bottom: 50px;

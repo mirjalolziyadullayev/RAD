@@ -19,6 +19,8 @@
         background-color: #0be041;
     }
     .content {
+        min-height: 100vh;
+        height: 100%!important;
         border: none!important;
         border-radius: 0px!important;
         margin-left: 0px!important;
@@ -28,6 +30,7 @@
         font-size: 12px!important;
     }
     .item {
+        min-height: 30vh;
         margin-left: 5px!important;
         margin-right: 5px!important;
     }
@@ -103,9 +106,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 14px;
     text-align: center; 
     background-color: #e3f0f3d3;
+    background-position: cover  ;
     border: 1px solid #86868b;
     border-radius: 12px;
     padding: 10px;
+    min-height: 100vh;
     padding-bottom: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -167,32 +172,55 @@ body::-webkit-scrollbar-thumb {
     background-color: #0be041;
 }
 
-
 .item li {
     text-align: left;
     border: 1px solid #86868b;
     background-color: #e3f0f3c5;
-    user-select: none;
     list-style: none;
     border-radius: 12px;
     margin: 15px;
-    padding: 15px;
-
+    padding: 20px;
+    cursor: pointer;
+}
+.item li::before {
+    content: '';
+    float: left;
+    height: 18px;
+    width: 18px;
+    margin-top: -2px;
+    margin-right: 24px;
+    border-radius: 50%;
+    background-image: url(../images/task/uncheck.png);
+    background-size: cover;
+    background-position: center;
+}
+.item li.checked {
+    color: #86868b;
+    text-decoration: line-through;
+}
+.item li.checked::before {
+    background-image: url(../images/task/check.png);
 }
 .item li button {
+    cursor: pointer;
     padding-top: 0px;
     padding-left: 4px;
     padding-right: 4px;
     padding-bottom: 0px;
     float: right;
-    background-color: #0cd33e;
+    background-color: #e01e3b;
     border: 1px solid #86868b;
     border-radius: 5px;
 }
 .item li button:active {
-    background-color: #0be041;
+    background-color: #ed2745;
 }
-
+.navbar .logout {
+    background-color: #e01e3b;
+}
+.navbar .logout:active {
+    background-color: #ed2745;
+} 
 
     
 

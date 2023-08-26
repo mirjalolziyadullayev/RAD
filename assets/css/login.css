@@ -1,3 +1,22 @@
+@media all and (max-width: 700px) {
+
+    .navbar {
+        border-right: none;
+        border-left: none;
+    }
+    
+    .content {
+        width: 70%;
+        font-size: 12px!important;
+    }
+    .item {
+        margin-left: 5px!important;
+        margin-right: 5px!important;
+    }
+    .item button {
+        margin-top: 44px!important;
+    }
+}
 * {
     padding: 0;
     margin: 0;
