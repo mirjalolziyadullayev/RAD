@@ -46,7 +46,7 @@
     margin: 0;
 }
 body {
-    background: url(/assets/images/welcome/image.jpg) no-repeat center center fixed; 
+    background: url(/content/assets/images/background/image.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -141,6 +141,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .item {
+    min-height: 100vh;
     padding: 15px;
     margin: 15px;
     border: 1px solid #86868b;
@@ -173,6 +174,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .item li {
+    outline: none;
+    font-family: sans-serif;
     text-align: left;
     border: 1px solid #86868b;
     background-color: #e3f0f3c5;

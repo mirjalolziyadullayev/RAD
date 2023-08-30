@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home.</title>
-    <link rel="stylesheet" href="assets/css/task.css">
+    <link rel="stylesheet" href="assets/css/notes.css">
     <link rel="icon" href="assets/images/logo/img.png">
     
 </head>
@@ -22,20 +22,22 @@
     </div>
     <div class="content">
         <div class="header">
-            <a href="../home.html"><img src="assets/images/task/tasks.png" alt="there was an image"></a>
+            <a href="../home.html"><img src="assets/images/notes/notes.png" alt="there was an image"></a>
             <h3>Make strong yourself. Be disciplined, Always have your plans.</h3>
             <h2>You can do what you want.</h2>
         </div>
 
         <div class="item">
-            <h3>Tasks</h3>
+            <h3>Notes</h3>
             <div class="task">
-                <input type="text" id="input-box" placeholder="Add your task">
-                <button onclick="addTask()">Add</button>
+                <button class="btn">Create Note</button>
             </div>
-            <ul id="list-container">
-            </ul>
+            <div class="notes-container">
+                <!-- <p contenteditable="true" class="input-box">
+                    <img src="assets/images/notes/delete.png" alt="there was an image">
+                </p> -->
+            </div>
         </div>
-    <script src="javascript/task/script.js"></script>
+    <script src="javascript/notes/script.js"></script>
 </body>
 </html>
