@@ -191,7 +191,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .item .input-box img {
-
+    user-select: none;
     border: 1px solid #86868b;
     padding: 5px;
     margin-left: 15px;
