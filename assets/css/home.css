@@ -55,6 +55,12 @@
     background-color: #457ff1d3;
     color: #fff;
 }
+.dark-mode .navbar .user {
+    color: #fff;
+}
+.dark-mode .navbar .logout {
+    color: #fff;
+}
 
 * {
     padding: 0;
@@ -119,7 +125,6 @@ body::-webkit-scrollbar-thumb {
 }  
 
 /* Content */
-
 
 .content {
     font-size: 14px;
