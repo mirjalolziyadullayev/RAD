@@ -4,6 +4,6 @@ for now completed only UI part of our project, that means project not completed 
 </p>
 
 # How to use?
-<p>You can easily download, and use it, it is copmpletely <b>Open Source</b> project.</p>
+<p>You can easily download, and use it, it is completely <b>Open Source</b> project.</p>
 
 <h6>RAD project</h6>
