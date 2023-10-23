@@ -84,7 +84,7 @@ form.addEventListener('submit', async (e) => {
 
     // Send user data as JSON to the server
 
-    fetch("http://192.168.1.246:8080/users", {
+    fetch("http://127.0.0.1:8080/users", {
     method: "POST",
     body: JSON.stringify(newUser),
     headers: {
@@ -93,6 +93,7 @@ form.addEventListener('submit', async (e) => {
     })
     .then((response) => response.json())
     .then((json) => console.log(json));
-    form.reset();
+    form.reset();   
     errorHandler.innerText = "Data saved successfully";
+    
 });
