@@ -31,36 +31,59 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Login validating
+// Login 
 
-const form = document.getElementById('form')
-const username = document.getElementById('username')
-const password = document.getElementById('password')
-const errorHandler = document.getElementById('error')
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("form");
+    const EmailandUsername = document.getElementById("email_username");
+    const Password = document.getElementById("password");
+    const errorHandler = document.getElementById("error");
 
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-form.addEventListener('submit', (e) => {
-    let messages = []
+        let messages = [];
 
-    if (username.value === '' || username.value === null) {
-        messages.push('Username is required!')
-    }
+        if (EmailandUsername.value === '' || EmailandUsername.value === null) {
+            messages.push('Username is required!');
+        }
 
-    if (password.value.length <= 6) {
-        messages.push('Password must be more than 6 characters!')
-    }
+        if (Password.value.length <= 6) {
+            messages.push('Password must be more than 6 characters!');
+        }
 
-    if (password.value.length >= 20) {
-        messages.push('Password must be less than 20 characters!')
-    }
+        if (Password.value.length >= 20) {
+            messages.push('Password must be less than 20 characters!');
+        }
 
-    if (password.value === 'password') {
-        messages.push('Password cannot be password')
-    }
+        if (Password.value === 'password') {
+            messages.push('Password cannot be "password".');
+        }
 
-    if (messages.length > 0) {
-        e.preventDefault()
-        errorHandler.innerText = messages.join(', ')
-    }
-})
+        if (messages.length > 0) {
+            errorHandler.innerText = messages.join(', ');
+        } else {
+            console.log("EmailandUsername.value:", EmailandUsername.value);
+            console.log("Password.value:", Password.value);
+            try {
+                const response = await fetch("http://127.0.0.1:8080/users");
 
+                if (!response.ok) {
+                    throw new Error(`HTTP error. status: ${response.status}`);
+                }
+
+                const userData = await response.json();
+
+                const userExists = userData.some(user => user.EmailUsername === EmailandUsername.value && user.Password === Password.value);
+
+                if (userExists) {
+                    console.log("Match found, you can enter!");
+                } else {
+                    console.log("No matching account found.");
+                }
+            } catch (error) {
+                console.log("Error: ", error);
+            }
+        }
+    });
+});
