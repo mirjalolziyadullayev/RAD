@@ -84,7 +84,7 @@ form.addEventListener('submit', async (e) => {
 
     // Send user data as JSON to the server
 
-    fetch("http://127.0.0.1:8080/users", {
+    fetch("https://radserver.onrender.com/users", {
     method: "POST",
     body: JSON.stringify(newUser),
     headers: {
@@ -93,7 +93,6 @@ form.addEventListener('submit', async (e) => {
     })
     .then((response) => response.json())
     .then((json) => console.log(json));
-    form.reset();   
+    form.reset();
     errorHandler.innerText = "Data saved successfully";
-    
 });

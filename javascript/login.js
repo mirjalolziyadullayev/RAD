@@ -63,3 +63,4 @@ form.addEventListener('submit', (e) => {
         errorHandler.innerText = messages.join(', ')
     }
 })
+
