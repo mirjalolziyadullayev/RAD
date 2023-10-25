@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("EmailandUsername.value:", EmailandUsername.value);
             console.log("Password.value:", Password.value);
             try {
-                const response = await fetch("http://127.0.0.1:8080/users");
+                const response = await fetch("httpS://radserver.onrender.com/users");
 
                 if (!response.ok) {
                     throw new Error(`HTTP error. status: ${response.status}`);
@@ -77,9 +77,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 const userExists = userData.some(user => user.EmailUsername === EmailandUsername.value && user.Password === Password.value);
 
                 if (userExists) {
-                    console.log("Match found, you can enter!");
+                    errorHandler.innerText = ("Successfully logged in.")
+                    console.log("Account found, you can enter!");
                 } else {
-                    console.log("No matching account found.");
+                    errorHandler.innerText = ("No matching account found.")
+                    console.log("No account found.");
                 }
             } catch (error) {
                 console.log("Error: ", error);
